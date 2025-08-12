@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState} from "react";
 import PropTypes from "prop-types";
 import DropdownProduct from "./DropdownProduct";
 import DropdownSolutions from "./DropdownSolutions";
@@ -13,25 +13,25 @@ export default function Header({
 }) {
   // Hamburger and mobile menu state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 0);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <header
-      className={`sticky top-0 w-full z-50 transition-all duration-300 py-4 App-header bg-[#0f2518] text-white shadow-md`}
-      style={{
-        background: isScrolled ? "rgba(15,37,24,0.97)" : "rgba(15,37,24,0.92)",
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
-        boxShadow: isScrolled ? "0 2px 12px 0 rgba(0,0,0,0.08)" : "none",
-      }}
+      className={`sticky top-0 w-full z-50 transition-all duration-300 py-4 App-header bg-[#d8f3dc] text-white`}
+      // style={{
+      //   background: isScrolled ? "rgba(15,37,24,0.97)" : "rgba(15,37,24,0.92)",
+      //   backdropFilter: "blur(12px)",
+      //   WebkitBackdropFilter: "blur(12px)",
+      //   boxShadow: isScrolled ? "0 2px 12px 0 rgba(0,0,0,0.08)" : "none",
+      // }}
     >
       <div className="container mx-auto flex items-center justify-between px-4 md:px-12 gap-4 flex-wrap">
         <div className="flex items-center gap-2 text-xl font-bold">

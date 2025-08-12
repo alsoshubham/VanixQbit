@@ -58,16 +58,16 @@ export default function Footer() {
             Let’s Connect
           </h3>
           <a
-            href="mailto:info@vanixqbit.com"
+            href="mailto:"
             className="text-sm text-gray-400 mb-4 block hover:text-white"
           >
-            info@vanixqbit.com
+            info@example.com
           </a>
           <a
-            href="tel:9990357676"
+            href="tel:"
             className="text-sm text-gray-400 mb-4 block hover:text-white"
           >
-            9990357676
+            987654321
           </a>
           <div className="flex space-x-4">
             <a
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        © 2025 VanixQbit. All rights reserved.
+        This is unofficial website of VanixQbit. made for project purposes. All rights for this is reserved to <a href="https://www.linkedin.com/in/alsoshubham" className="text-white">alsoshubham</a>
       </div>
     </footer>
   );

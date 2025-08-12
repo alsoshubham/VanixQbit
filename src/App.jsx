@@ -1,10 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./pages/Hero";
-import Features from "./pages/Features";
-import Partners from "./pages/Partners";
 import Service from "./pages/Service";
-import Credibility from "./pages/Credibility";
 import Testimonials from "./pages/Testimonials";
 import Footer from "./components/Footer";
 
@@ -37,10 +34,7 @@ export default function App() {
         />
         <main>
           <Hero />
-          <Features />
-          <Partners />
           <Service />
-          <Credibility />
           <Testimonials />
         </main>
         <Footer />
