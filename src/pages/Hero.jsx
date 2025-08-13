@@ -9,7 +9,7 @@ export default function Hero() {
           </h1>
           {/* Show image after heading only on mobile */}
           <div className="w-full flex justify-center mb-6 md:hidden">
-            <img src={assets.bg_img1} alt="Hero background" className="hero-img-responsive" />
+              <img src={assets.bg_img1} alt="Empowering business growth - VanixQbit hero background" className="hero-img-responsive" />
           </div>
           <p className="text-gray-700 text-base sm:text-lg mb-10 max-w-2xl">
             We help businesses scale through innovative tech,
@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
         {/* Show image only on desktop */}
   <div className="w-full justify-center mb-8 md:mb-0 md:w-auto hidden md:flex">
-          <img src={assets.bg_img1} alt="Hero background" className="hero-img-responsive" />
+          <img src={assets.bg_img1} alt="Empowering business growth - VanixQbit hero background" className="hero-img-responsive" />
         </div>
       </section>
   <section className="Partners-container bg-white text-white py-12 px-2 sm:px-6 md:px-12 lg:px-20">
@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-4 p-0 sm:p-2 md:p-4 w-full max-w-5xl mx-auto">
             <img
               src={assets.p1}
-              alt="Spillmate logo"
+                alt="Spillmate - VanixQbit partner logo"
               className="w-full h-20 sm:h-24 md:h-28 object-contain bg-[#081c15] rounded-lg shadow-md"
               loading="lazy"
             />

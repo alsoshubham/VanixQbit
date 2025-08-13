@@ -16,8 +16,8 @@ export default function Testimonials() {
             and lasting.
           </p>
           <img
-            src="https://via.placeholder.com/400x200"
-            alt="VanixQbit Impact Report"
+              src="https://via.placeholder.com/400x200"
+              alt="VanixQbit Impact Report - measurable business results"
             className="rounded-md shadow-md text-[#2d6a4f]"
             loading="lazy"
           />

@@ -6,9 +6,7 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-bold text-white mb-4">VanixQbit</h2>
           <p className="text-sm text-gray-400">
-            VanixQbit is a full-stack business agency blending strategy,
-            creativity, and tech to help brands unlock their potential—from
-            idea to execution.
+            VanixQbit is a leading digital agency specializing in technology development, web design, digital marketing, SEO, cloud solutions, and accounting. We blend strategy, creativity, and technology to help brands unlock their potential and achieve sustainable business growth from idea to execution.
           </p>
         </div>
         <div>

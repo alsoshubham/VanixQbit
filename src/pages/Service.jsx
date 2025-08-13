@@ -3,7 +3,7 @@ const features = [
 	{
 		title: "Development",
 		img: "https://images.unsplash.com/photo-1738255654134-1877cb984a8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGNvZGUlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D",
-		alt: "Development",
+		alt: "Custom software development by VanixQbit",
 		desc: "Build scalable, secure, and high-performance applications with our expert development team.",
 	},
 	{
