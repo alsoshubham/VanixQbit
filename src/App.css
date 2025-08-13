@@ -1,3 +1,45 @@
+/* Responsive styles for Hero section */
+.Hero-container {
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .Hero-container {
+    flex-direction: row;
+  }
+}
+
+
+
+.hero-img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+  background: #fff;
+  transition: box-shadow 0.2s;
+  height: auto;
+  max-width: 100%;
+}
+
+.hero-img-responsive:hover {
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.16);
+}
+
+@media (max-width: 640px) {
+  .Hero-container h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .Hero-container p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .Hero-container button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
