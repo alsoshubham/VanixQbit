@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-[#081c15] text-gray-300 py-12 px-6 md:px-20">
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        This is unofficial website of VanixQbit. made for project purposes. All rights for this is reserved to <a href="https://www.linkedin.com/in/alsoshubham" className="text-white">alsoshubham</a>
+        This is an unofficial website of VanixQbit made only for project purposes. All rights for this is reserved to <a href="https://www.linkedin.com/in/alsoshubham" className="text-white">alsoshubham</a>
       </div>
     </footer>
   );

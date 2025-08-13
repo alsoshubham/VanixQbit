@@ -11,37 +11,16 @@ export default function Header({
   ArrowUp,
   ArrowDown,
 }) {
-  // Hamburger and mobile menu state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [isScrolled, setIsScrolled] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 0);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
 
   return (
-    <header
-      className={`sticky top-0 w-full z-50 transition-all duration-300 py-4 App-header bg-[#d8f3dc] text-white`}
-      // style={{
-      //   background: isScrolled ? "rgba(15,37,24,0.97)" : "rgba(15,37,24,0.92)",
-      //   backdropFilter: "blur(12px)",
-      //   WebkitBackdropFilter: "blur(12px)",
-      //   boxShadow: isScrolled ? "0 2px 12px 0 rgba(0,0,0,0.08)" : "none",
-      // }}
-    >
-      <div className="container mx-auto flex items-center justify-between px-4 md:px-12 gap-4 flex-wrap">
-        <div className="flex items-center gap-2 text-xl font-bold">
-          <img src="" alt="logo" className="App-logo" />
-        </div>
-        {/* Desktop Nav */}
-        <nav
-          className="hidden md:flex items-center gap-5 bg-white/60 backdrop-blur-md rounded-full px-4 py-2 shadow relative"
-          aria-label="Main navigation"
-        >
+    <>
+      {/* Desktop Nav */}
+      <nav
+        className="fixed left-1/2 top-4 transform -translate-x-1/2 hidden md:flex items-center gap-5 bg-white/60 backdrop-blur-md rounded-full px-4 py-2 shadow z-50"
+        aria-label="Main navigation"
+        style={{ minWidth: 400 }}
+      >
           {/* Product Dropdown */}
           <div className="relative">
             <button
@@ -85,47 +64,37 @@ export default function Header({
             </button>
             {openMenu === "resources" && <DropdownResources />}
           </div>
-        </nav>
-        {/* Hamburger for mobile */}
-        <div className="md:hidden flex items-center">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-white focus:outline-none p-2"
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+      </nav>
+      {/* Hamburger for mobile */}
+  <div className="md:hidden flex items-center fixed left-1/2 top-4 transform -translate-x-1/2 z-50">
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="text-white focus:outline-none p-2"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        >
+          <svg
+            className="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              className="w-7 h-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d={
-                  isMenuOpen
-                    ? "M6 18L18 6M6 6l12 12"
-                    : "M4 6h16M4 12h16M4 18h16"
-                }
-              ></path>
-            </svg>
-          </button>
-        </div>
-        {/* Contact Sales button OUTSIDE nav, right-aligned on desktop */}
-        <div className="hidden md:flex ml-4">
-          <a
-            href="#"
-            className="text-white font-medium hover:underline"
-          >
-            Contact Sales
-          </a>
-        </div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={
+                isMenuOpen
+                  ? "M6 18L18 6M6 6l12 12"
+                  : "M4 6h16M4 12h16M4 18h16"
+              }
+            ></path>
+          </svg>
+        </button>
       </div>
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/90 backdrop-blur-md rounded-2xl mx-2 mt-2 shadow-lg">
+        <div className="md:hidden bg-white/90 backdrop-blur-md rounded-2xl mx-2 mt-20 shadow-lg fixed left-1/2 top-16 transform -translate-x-1/2 z-50 w-[90vw] max-w-md">
           <nav className="flex flex-col items-center space-y-3 py-4 px-4">
             <button
               className="w-full text-center text-[#0f2518] hover:text-green-700 transition-colors font-medium py-1"
@@ -151,16 +120,10 @@ export default function Header({
             >
               Resources
             </button>
-            <a
-              href="#"
-              className="w-full mt-2 text-center text-[#0f2518] font-medium hover:underline transition-colors"
-            >
-              Contact Sales
-            </a>
           </nav>
         </div>
       )}
-    </header>
+    </>
   );
 }
 

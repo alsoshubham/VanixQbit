@@ -1,4 +1,4 @@
-
+import { assets } from "../assets/assets";
 const features = [
 	{
 		title: "Development",
@@ -57,7 +57,7 @@ const FeatureCard = ({ title, img, alt, desc }) => (
 				style={{ objectPosition: "center" }}
 			/>
 		</div>
-		<p className="text-sm text-[#2d6a4f] min-h-[40px] flex items-start justify-center">
+		<p className="text-sm text-gray-800 min-h-[40px] flex items-start justify-center">
 			{desc}
 		</p>
 	</div>
@@ -65,7 +65,7 @@ const FeatureCard = ({ title, img, alt, desc }) => (
 export default function Service() {
   return (
     <div>
-      <section className="Service-container bg-[#d8f3dc] py-16 px-6 md:px-20">
+      <section className="Service-container bg-white py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">
@@ -87,27 +87,15 @@ export default function Service() {
         </div>
         <div className="flex justify-center md:justify-start space-x-6">
           <img
-            src="https://via.placeholder.com/100"
+            src={assets.team}
             alt="Team 1"
-            className="w-24 h-24 rounded-full object-cover"
-            loading="lazy"
-          />
-          <img
-            src="https://via.placeholder.com/100"
-            alt="Team 2"
-            className="w-24 h-24 rounded-full object-cover"
-            loading="lazy"
-          />
-          <img
-            src="https://via.placeholder.com/100"
-            alt="Team 3"
-            className="w-24 h-24 rounded-full object-cover"
+            className="rounded-full object-cover"
             loading="lazy"
           />
         </div>
       </div>
     </section>
-    <section className="Features-container bg-[#d8f3dc] text-gray-800 py-10 sm:px-4 md:px-8 lg:px-16">
+    <section className="Features-container bg-white text-gray-800 py-10 sm:px-4 md:px-8 lg:px-16">
 			<div className="relative overflow-x-hidden">
 				<div
 					className="flex items-center w-max animate-carousel"
