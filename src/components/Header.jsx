@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import DropdownProduct from "./DropdownProduct";
 import DropdownSolutions from "./DropdownSolutions";
@@ -21,55 +21,64 @@ export default function Header({
         aria-label="Main navigation"
         style={{ minWidth: 400 }}
       >
-          {/* Product Dropdown */}
-          <div className="relative">
-            <button
-              className={"flex items-center gap-1 px-2 py-1 font-medium text-[#0f2518] hover:text-green-700 bg-transparent focus:outline-none" + (openMenu === "product" ? " underline" : "")}
-              onMouseEnter={() => setOpenMenu("product")}
-              onMouseLeave={handleMouseLeave}
-              aria-haspopup="true"
-              aria-expanded={openMenu === "product"}
-            >
-              Product {openMenu === "product" ? ArrowUp : ArrowDown}
-            </button>
-            {openMenu === "product" && <DropdownProduct />}
-          </div>
-          {/* Solutions Dropdown */}
-          <div className="relative">
-            <button
-              className={"flex items-center gap-1 px-2 py-1 font-medium text-[#0f2518] hover:text-green-700 bg-transparent focus:outline-none" + (openMenu === "solutions" ? " underline" : "")}
-              onMouseEnter={() => setOpenMenu("solutions")}
-              onMouseLeave={handleMouseLeave}
-              aria-haspopup="true"
-              aria-expanded={openMenu === "solutions"}
-            >
-              Solutions {openMenu === "solutions" ? ArrowUp : ArrowDown}
-            </button>
-            {openMenu === "solutions" && <DropdownSolutions />}
-          </div>
-          {/* Pricing (no dropdown) */}
-          <button className="px-2 py-1 font-medium text-[#0f2518] hover:text-green-700 bg-transparent focus:outline-none">
-            Pricing
+        {/* Product Dropdown */}
+        <div className="relative">
+          <button
+            className={
+              "flex items-center gap-1 px-2 py-1 font-medium text-[#0f2518] hover:text-green-700 bg-transparent focus:outline-none" +
+              (openMenu === "product" ? " underline" : "")
+            }
+            onMouseEnter={() => setOpenMenu("product")}
+            onMouseLeave={handleMouseLeave}
+            aria-haspopup="true"
+            aria-expanded={openMenu === "product"}
+          >
+            Product {openMenu === "product" ? ArrowUp : ArrowDown}
           </button>
-          {/* Resources Dropdown */}
-          <div className="relative">
-            <button
-              className={"flex items-center gap-1 px-2 py-1 font-medium text-[#0f2518] hover:text-green-700 bg-transparent focus:outline-none" + (openMenu === "resources" ? " underline" : "")}
-              onMouseEnter={() => setOpenMenu("resources")}
-              onMouseLeave={handleMouseLeave}
-              aria-haspopup="true"
-              aria-expanded={openMenu === "resources"}
-            >
-              Resources {openMenu === "resources" ? ArrowUp : ArrowDown}
-            </button>
-            {openMenu === "resources" && <DropdownResources />}
-          </div>
+          {openMenu === "product" && <DropdownProduct />}
+        </div>
+        {/* Solutions Dropdown */}
+        <div className="relative">
+          <button
+            className={
+              "flex items-center gap-1 px-2 py-1 font-medium text-[#0f2518] hover:text-green-700 bg-transparent focus:outline-none" +
+              (openMenu === "solutions" ? " underline" : "")
+            }
+            onMouseEnter={() => setOpenMenu("solutions")}
+            onMouseLeave={handleMouseLeave}
+            aria-haspopup="true"
+            aria-expanded={openMenu === "solutions"}
+          >
+            Solutions {openMenu === "solutions" ? ArrowUp : ArrowDown}
+          </button>
+          {openMenu === "solutions" && <DropdownSolutions />}
+        </div>
+        {/* Pricing (no dropdown) */}
+        <button className="px-2 py-1 font-medium text-[#0f2518] hover:text-green-700 bg-transparent focus:outline-none">
+          Pricing
+        </button>
+        {/* Resources Dropdown */}
+        <div className="relative">
+          <button
+            className={
+              "flex items-center gap-1 px-2 py-1 font-medium text-[#0f2518] hover:text-green-700 bg-transparent focus:outline-none" +
+              (openMenu === "resources" ? " underline" : "")
+            }
+            onMouseEnter={() => setOpenMenu("resources")}
+            onMouseLeave={handleMouseLeave}
+            aria-haspopup="true"
+            aria-expanded={openMenu === "resources"}
+          >
+            Resources {openMenu === "resources" ? ArrowUp : ArrowDown}
+          </button>
+          {openMenu === "resources" && <DropdownResources />}
+        </div>
       </nav>
       {/* Hamburger for mobile */}
-  <div className="md:hidden flex items-center fixed left-1/2 top-4 transform -translate-x-1/2 z-50">
+  <div className="md:hidden flex items-center fixed right-4 top-4 z-50">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-white focus:outline-none p-2"
+          className="text-black focus:outline-none p-2"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           <svg
@@ -84,9 +93,7 @@ export default function Header({
               strokeLinejoin="round"
               strokeWidth="2"
               d={
-                isMenuOpen
-                  ? "M6 18L18 6M6 6l12 12"
-                  : "M4 6h16M4 12h16M4 18h16"
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
               }
             ></path>
           </svg>
