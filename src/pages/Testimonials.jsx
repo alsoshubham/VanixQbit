@@ -1,7 +1,7 @@
 export default function Testimonials() {
   return (
     <div>
-      <section className="Credibility-Section bg-[#b7e4c7] text-white py-20 px-6 md:px-20">
+      <section className="Credibility-Section bg-[#5AD195] text-white py-20 px-6 md:px-20">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         <div>
           <p className="uppercase text-sm font-medium tracking-widest text-[#2d6a4f] mb-2">
