@@ -4,10 +4,9 @@ export default function Hero() {
     <div>
       <section className="Hero-container bg-white text-white py-20 flex flex-col-reverse md:flex-row items-center min-h-[60vh] md:space-x-8">
         <div className="w-full p-4 sm:p-8 flex flex-col items-start text-left max-w-3xl mx-auto space-y-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl text-gray-700 font-semibold mb-6 leading-tight text-left sm:text-left">
-            Empower Vision Accelerate Growth
+          <h1 className="text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-6 leading-tight text-left sm:text-left">
+            <b className="text-[#0d7752] text-4xl md:text-6xl font-bold">Empower</b> Vision Accelerate <b className="text-[#0d7752] text-4xl md:text-6xl font-bold">Growth</b>
           </h1>
-          {/* Show image after heading only on mobile */}
           <div className="w-full flex justify-center mb-6 md:hidden">
               <img src={assets.bg_img1} alt="Empowering business growth - VanixQbit hero background" className="hero-img-responsive" />
           </div>
@@ -16,11 +15,12 @@ export default function Hero() {
             <br className="hidden sm:block" />
             strategic marketing, actionable insights, and financial precision.
           </p>
-          <button className="bg-[#b7e4c7] text-[#1b4332] px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg font-medium shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto">
+          <button 
+          className="bg-[#081c15] text-white px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg font-medium shadow-lg hover:scale-105 transition-transform duration-200 w-full sm:w-auto"
+          >
             Contact Sales
           </button>
         </div>
-        {/* Show image only on desktop */}
   <div className="w-full justify-center mb-8 md:mb-0 md:w-auto hidden md:flex">
           <img src={assets.bg_img1} alt="Empowering business growth - VanixQbit hero background" className="hero-img-responsive" />
         </div>

@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Hero from "./pages/Hero";
 import Service from "./pages/Service";
 import Testimonials from "./pages/Testimonials";
+import Newsletter from "./pages/Newsletter";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -36,6 +38,8 @@ export default function App() {
           <Hero />
           <Service />
           <Testimonials />
+          <Newsletter />
+          <Contact/>
         </main>
         <Footer />
       </div>
