@@ -26,8 +26,9 @@ export default function Header({
       </div>
       {/* Desktop Nav */}
       <nav
-        className="fixed left-1/2 top-4 transform -translate-x-1/2 hidden md:flex items-center gap-5 bg-white/60 backdrop-blur-md rounded-full px-4 h-[48px] shadow z-50 min-w-[400px] pl-[140px]"
+        className="fixed left-1/2 top-4 transform -translate-x-1/2 hidden md:flex items-center gap-5 bg-white/60 backdrop-blur-md rounded-full px-4 py-2 shadow z-50"
         aria-label="Main navigation"
+        style={{ minWidth: 400 }}
         role="navigation"
       >
         {/* Product Dropdown */}
