@@ -19,7 +19,7 @@ export default function Header({
     <header className="w-full top-0 left-0 z-50">
       {/* Logo and Hamburger Row */}
       <div className="flex items-center justify-between px-4 md:px-8 py-2">
-        <img src={logo} alt="Logo" className="h-[64px] w-auto object-contain" />
+        <img src={logo} alt="Logo" className="h-[92px] w-auto object-contain" />
         {/* Hamburger only on mobile */}
         <div className="md:hidden flex items-center">
           <button

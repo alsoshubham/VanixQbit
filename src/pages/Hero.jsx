@@ -4,12 +4,12 @@ export default function Hero() {
     <div>
       <section className="Hero-container bg-white py-20 flex flex-col-reverse md:flex-row items-center min-h-[60vh] md:space-x-8">
         <div className="w-full p-4 sm:p-8 flex flex-col items-center text-left max-w-3xl mx-auto space-y-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-6 leading-tight text-center">
-            <b className="text-[#0d7752] text-4xl md:text-6xl font-bold">
+          <h1 className="text-5xl sm:text-5xl md:text-7xl text-black font-semibold mb-6 leading-tight text-center">
+            <b className="text-[#0d7752] font-bold">
               Empower
             </b>{" "}
             Vision Accelerate{" "}
-            <b className="text-[#0d7752] text-4xl md:text-6xl font-bold">
+            <b className="text-[#0d7752] font-bold">
               Growth
             </b>
           </h1>

@@ -25,19 +25,19 @@ export default function Testimonials() {
 
         <div className="grid grid-cols-2 gap-8 text-right">
           <div>
-            <p className="text-5xl font-bold text-white">200+</p>
+            <p className="text-5xl font-bold text-[#0d7752]">200+</p>
             <p className="mt-2 text-[#2d6a4f]">Brands launched</p>
           </div>
           <div>
-            <p className="text-5xl font-bold text-white">1.2M+</p>
+            <p className="text-5xl font-bold text-[#0d7752]">1.2M+</p>
             <p className="mt-2 text-[#2d6a4f]">Impressions delivered</p>
           </div>
           <div>
-            <p className="text-5xl font-bold text-white">500k+</p>
+            <p className="text-5xl font-bold text-[#0d7752]">500k+</p>
             <p className="mt-2 text-[#2d6a4f]">Lines of code</p>
           </div>
           <div>
-            <p className="text-5xl font-bold text-white">98%</p>
+            <p className="text-5xl font-bold text-[#0d7752]">98%</p>
             <p className="mt-2 text-[#2d6a4f]">Client retention rate</p>
           </div>
         </div>

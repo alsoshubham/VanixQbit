@@ -87,14 +87,14 @@ export default function Service() {
               streamline execution with a unified approach—so you move faster,
               smarter, and with impact.
             </p>
-            <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
+            <div className="flex flex-row items-center space-x-6 mt-4">
               <a
                 href="#services"
                 className="text-green-800 font-medium underline hover:text-green-600"
               >
                 Explore our capabilities
               </a>
-              <button className="mt-4 px-6 py-2 bg-white border-2 border-b-emerald-700 text-black font-semibold rounded-lg">
+              <button className="px-6 py-2 bg-white border-2 border-b-emerald-700 text-black font-semibold rounded-lg">
                 Learn More
               </button>
             </div>

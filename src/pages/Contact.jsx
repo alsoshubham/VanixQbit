@@ -69,7 +69,7 @@ const Contact = () => {
         <img
           src={assets.contact}
           alt="Contact Illustration"
-          className="max-w-3xl w-auto h-auto"
+          className="w-auto h-auto"
         />
       </div>
     </div>

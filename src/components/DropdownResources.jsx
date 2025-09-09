@@ -6,7 +6,6 @@ export default function DropdownResources() {
         <li><button className="bg-[#b7e4c7] px-3 py-1 rounded w-full text-left">E-books</button></li>
         <li><button className="bg-[#b7e4c7] px-3 py-1 rounded w-full text-left">Whitepapers</button></li>
         <li><button className="bg-[#b7e4c7] px-3 py-1 rounded w-full text-left">Case Studies</button></li>
-        <li><button className="bg-[#b7e4c7] px-3 py-1 rounded w-full text-left">Webinars</button></li>
       </ul>
     </div>
   );
