@@ -5,6 +5,7 @@ import p3 from '../assets/p3.png'
 import p4 from '../assets/p4.png'
 import team from '../assets/team.png'
 import contact from '../assets/contact.png'
+import logo from '../assets/logo.svg'
 export const assets ={
     bg_img1,
     p1,
@@ -12,5 +13,6 @@ export const assets ={
     p3,
     p4,
     team,
-    contact
+    contact,
+    logo
 }

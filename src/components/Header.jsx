@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../assets/logo.svg";
 import PropTypes from "prop-types";
 import DropdownProduct from "./DropdownProduct";
 import DropdownSolutions from "./DropdownSolutions";
@@ -15,11 +16,18 @@ export default function Header({
 
   return (
     <>
+      {/* Logo for Desktop */}
+      <div className="hidden md:flex items-center fixed left-8 top-4 z-50">
+        <img
+          src={logo}
+          alt="Logo"
+          className="h-[64px] w-auto object-contain"
+        />
+      </div>
       {/* Desktop Nav */}
       <nav
-        className="fixed left-1/2 top-4 transform -translate-x-1/2 hidden md:flex items-center gap-5 bg-white/60 backdrop-blur-md rounded-full px-4 py-2 shadow z-50"
+        className="fixed left-1/2 top-4 transform -translate-x-1/2 hidden md:flex items-center gap-5 bg-white/60 backdrop-blur-md rounded-full px-4 h-[48px] shadow z-50 min-w-[400px] pl-[140px]"
         aria-label="Main navigation"
-        style={{ minWidth: 400 }}
         role="navigation"
       >
         {/* Product Dropdown */}
@@ -50,7 +58,7 @@ export default function Header({
             aria-haspopup="true"
             aria-expanded={openMenu === "solutions"}
           >
-            Solutions {openMenu === "solutions" ? ArrowUp : ArrowDown}
+            Services {openMenu === "solutions" ? ArrowUp : ArrowDown}
           </button>
           {openMenu === "solutions" && <DropdownSolutions />}
         </div>
@@ -75,8 +83,16 @@ export default function Header({
           {openMenu === "resources" && <DropdownResources />}
         </div>
       </nav>
-      {/* Hamburger for mobile */}
-  <div className="md:hidden flex items-center fixed right-4 top-4 z-50">
+      {/* Logo and Hamburger for mobile */}
+      <div className="md:hidden flex items-center fixed left-4 top-4 z-50">
+        <img
+          src={logo}
+          alt="Logo"
+          className="h-[48px] w-auto object-contain"
+          style={{ maxWidth: 120 }}
+        />
+      </div>
+      <div className="md:hidden flex items-center fixed right-4 top-4 z-50">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-black focus:outline-none p-2"
