@@ -2,7 +2,7 @@ import { assets } from "../assets/assets";
 export default function Hero() {
   return (
     <div>
-      <section className="Hero-container bg-white text-white py-20 flex flex-col-reverse md:flex-row items-center min-h-[60vh] md:space-x-8">
+      <section className="Hero-container bg-white py-20 flex flex-col-reverse md:flex-row items-center min-h-[60vh] md:space-x-8">
         <div className="w-full p-4 sm:p-8 flex flex-col items-center text-left max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-6 leading-tight text-center">
             <b className="text-[#0d7752] text-4xl md:text-6xl font-bold">
@@ -13,13 +13,13 @@ export default function Hero() {
               Growth
             </b>
           </h1>
-          <div className="w-full flex justify-center mb-6 md:hidden">
+          {/* <div className="w-full flex justify-center mb-6 md:hidden">
             <img
               src={assets.bg_img1}
               alt="Empowering business growth - VanixQbit hero background"
               className="hero-img-responsive"
             />
-          </div>
+          </div> */}
           <p className="text-gray-700 text-base sm:text-lg mb-10 max-w-2xl text-center">
             We help businesses scale through innovative tech,
             <br className="hidden sm:block" />
@@ -37,7 +37,7 @@ export default function Hero() {
           />
         </div> */}
       </section>
-      <section className="Partners-container bg-white text-white py-12 px-2 sm:px-6 md:px-12 lg:px-20">
+      <section className="Partners-container bg-white py-12 px-2 sm:px-6 md:px-12 lg:px-20">
         <div className="Container mx-auto">
           <h2 className="text-4xl font-semibold text-gray-800 mb-6 leading-tight text-center">
             Pioneering the future — VanixQbit unites with visionaries.
